@@ -3,6 +3,7 @@ import useSWR from 'swr'
 import Layout from '../components/Layout'
 import fetcher from '../lib/fetcher'
 import StatBoard from '../components/StatBoard'
+import CountryStat from '../components/Country/CountryStat'
 import { Loading } from '@zeit-ui/react'
 const index = () => {
 
@@ -14,6 +15,8 @@ const index = () => {
         
             {!data && <Loading size="large"/> }
             { data && <StatBoard {...data} />}
+
+            <CountryStat/>
         </Layout>
     );
 }

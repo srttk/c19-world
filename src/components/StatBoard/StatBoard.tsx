@@ -1,20 +1,20 @@
 import React from 'react';
-import { Row, Col, Card } from '@zeit-ui/react'
+import { Grid, Card } from '@zeit-ui/react'
 import StatCard from '../StatCard'
 
 const Stats = ({ confirmed , deaths , recovered }) => {
     return (
-        <Row justify="space-around" gap={.8}>
-            <Col>
+        <Grid.Container  gap={2} justify="center">
+            <Grid xs={8} md={8}>
                 <StatCard type="warning" title="Confirmed" value={confirmed.value} />
-            </Col>
-            <Col>
+            </Grid>
+            <Grid xs={8} md={8}>
                 <StatCard type="dark" title="Deaths" value={deaths.value}/>
-            </Col>
-            <Col>
+            </Grid>
+            <Grid xs={8} md={8}>
             <StatCard type="success" title="Recoverd" value={recovered.value}/>
-            </Col>
-        </Row>
+            </Grid>
+        </Grid.Container>
     );
 }
 
