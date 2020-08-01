@@ -1,7 +1,10 @@
 import React, { useState} from 'react';
 import useSWR from 'swr'
 import { Select, Loading , Card, Text, Grid} from '@zeit-ui/react'
+import { Heart, Meh, Activity } from '@zeit-ui/react-icons'
 import fetcher from '../../lib/fetcher'
+import OverallCount from './OverallCount'
+import Detailed from './Detailed'
 
 const CountryStat = () => {
 
@@ -45,26 +48,22 @@ const CountryStat = () => {
             {countryData&& <div style={{marginTop:"12px"}}>
                 <Grid.Container gap={1}>
                     <Grid xs={24} md={8}>
-                        <Card>
-                            <Text h3 type="warning">Active</Text>
-                            <Text h4 type="secondary">{countryData.confirmed.value}</Text>
-                        </Card>
+                        <OverallCount title="Confirmed" item={countryData.confirmed} Icon={Activity}/>
                     </Grid>
                     <Grid xs={24} md={8}>
-                        <Card>
-                            <Text h3 type="error">Deaths</Text>
-                            <Text h4 type="secondary">{countryData.deaths.value}</Text>
-                        </Card>
+                        <OverallCount title="Deaths" cardType="error" item={countryData.deaths} Icon={Meh}/>
                     </Grid>
                     <Grid xs={24} md={8}>
-                        <Card>
-                            <Text h3 type="success">Recovered</Text>
-                            <Text h4 type="secondary">{countryData.recovered.value}</Text>
-                        </Card>
+                        <OverallCount title="Recovered" cardType="success" item={countryData.recovered} Icon={Heart}/>
                     </Grid>
 
                 </Grid.Container>
             </div>}
+
+            {/* Country detail */}
+            { country && (<div style={{marginTop:"24px"}}>
+                <Detailed country={country}/>
+            </div>)}
 
         </Card>
     );
