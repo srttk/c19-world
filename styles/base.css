@@ -1,0 +1,16 @@
+html, body {
+    position: relative;
+    height: 100%;
+
+    @apply bg-gray-800;
+}
+
+.app {
+    @apply bg-gray-700 max-w-lg mx-auto;
+}
+
+@screen sm {
+    .app {
+        @apply max-w-6xl;
+    }
+}
