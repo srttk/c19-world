@@ -10,23 +10,13 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-              {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=UA-36053418-7`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-36053418-7', {
-              page_path: window.location.pathname,
-            });
-          `,
-            }}
-          />
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36053418-7"/>
+<script dangerouslySetInnerHTML={{__html:`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36053418-7');`}}/>
         </Head>
         <body>
           <Main />
