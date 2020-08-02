@@ -5,7 +5,6 @@ import fetcher from '../../lib/fetcher'
 
 const DetailTable = ({ country = null, fetchSection="confirmed" }) => {
     const { data , error } = useSWR(`/api/countries/${country}/${fetchSection}`, fetcher)
-    console.log('tavle data ', data)
     return (
         <div>
             <Table data={data}>

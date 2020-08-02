@@ -15,14 +15,11 @@ const CountryStat = () => {
 
     const { data: countryData } = useSWR(`/api/countries/${country}`, fetcher)
 
-    console.log('>',countryData)
-
     function handleCountrySelection(countryCode) {
         
         setCountry(countryCode)
     }
 
-    console.log('Data ', data)
     return (
         <Card shadow style={{marginTop:"30px"}}>
             <div>
