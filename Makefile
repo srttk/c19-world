@@ -1,0 +1,2 @@
+deploy:
+	vercel deploy --prod

@@ -7,8 +7,8 @@ const StatCard = ({title, value, icon=null, ...rest}) => {
         <Card shadow {...rest} style={{width:"100%"}}>
              <Text h2>
                  <Activity/>
-                 {title}</Text>
-            <Text h3>{value}</Text>
+                 {value}</Text>
+            <Text h3>{title}</Text>
         </Card>
     );
 }

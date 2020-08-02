@@ -1,6 +1,15 @@
 import React from 'react';
 import { Card, Text } from '@zeit-ui/react'
-const OverallCount = ({ item=null, title='Confirmed', cardType="warning", Icon }) => {
+
+
+
+type OverallCountProps = {
+    item:any
+    title: string
+    cardType: any
+    Icon: any
+}
+const OverallCount:React.FC<OverallCountProps> = ({ item=null, title='Confirmed', cardType="warning", Icon }) => {
     return (
         <Card>
            <Text h3={true} type={cardType}>  { Icon && <Icon/>} { title }</Text>

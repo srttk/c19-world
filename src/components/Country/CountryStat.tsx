@@ -48,7 +48,7 @@ const CountryStat = () => {
             {countryData&& <div style={{marginTop:"12px"}}>
                 <Grid.Container gap={1}>
                     <Grid xs={24} md={8}>
-                        <OverallCount title="Confirmed" item={countryData.confirmed} Icon={Activity}/>
+                        <OverallCount title="Confirmed" cardType="warning" item={countryData.confirmed} Icon={Activity}/>
                     </Grid>
                     <Grid xs={24} md={8}>
                         <OverallCount title="Deaths" cardType="error" item={countryData.deaths} Icon={Meh}/>

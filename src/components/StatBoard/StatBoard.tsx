@@ -1,9 +1,11 @@
 import React from 'react';
-import { Grid, Card } from '@zeit-ui/react'
+import { Grid, Text } from '@zeit-ui/react'
 import StatCard from '../StatCard'
 
 const Stats = ({ confirmed , deaths , recovered }) => {
     return (
+        <div>
+        <Text h3>Global Case</Text>
         <Grid.Container  gap={2} justify="center">
             <Grid xs={24} md={8}>
                 <StatCard type="warning" title="Confirmed" value={confirmed.value} />
@@ -15,6 +17,7 @@ const Stats = ({ confirmed , deaths , recovered }) => {
             <StatCard type="success" title="Recoverd" value={recovered.value}/>
             </Grid>
         </Grid.Container>
+        </div>
     );
 }
 

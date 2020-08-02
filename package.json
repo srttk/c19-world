@@ -1,7 +1,7 @@
 {
-  "name": "covid19-app",
+  "name": "c19world",
   "version": "1.0.0",
-  "description": "",
+  "description": "Covid-19 Coronavirus outbreak statistics",
   "main": "index.js",
   "dependencies": {
     "@zeit-ui/react": "^1.8.0-canary.8",
