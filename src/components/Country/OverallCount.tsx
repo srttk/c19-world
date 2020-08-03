@@ -13,7 +13,7 @@ const OverallCount:React.FC<OverallCountProps> = ({ item=null, title='Confirmed'
     return (
         <Card>
            <Text h3={true} type={cardType}>  { Icon && <Icon/>} { title }</Text>
-            <Text h4 type="secondary">{item.value}</Text>     
+            <Text h4 type="secondary">{Number(item.value).toLocaleString()}</Text>     
         </Card>
     );
 }

@@ -7,7 +7,7 @@ const StatCard = ({title, value, icon=null, ...rest}) => {
         <Card shadow {...rest} style={{width:"100%"}}>
              <Text h2>
                  <Activity/>
-                 {value}</Text>
+                 {Number(value).toLocaleString()}</Text>
             <Text h3>{title}</Text>
         </Card>
     );

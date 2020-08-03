@@ -7,11 +7,14 @@ const DetailTable = ({ country = null, fetchSection="confirmed" }) => {
     const { data , error } = useSWR(`/api/countries/${country}/${fetchSection}`, fetcher)
     return (
         <div>
-            <Table data={data}>
+            <Table data={data ? data.map(d => ({...d,
+                confirmed: Number(d.confirmed).toLocaleString(),
+                deaths:Number(d.deaths).toLocaleString(),
+                recovered:Number(d.recovered).toLocaleString(),
+                 })):[]}>
                 <Table.Column prop="provinceState" label="Province / State" />
                 <Table.Column prop="confirmed" label="Confirmed" />
                 <Table.Column prop="deaths" label="Deaths" />
-                <Table.Column prop="recovered" label="Recovered" />
                 <Table.Column prop="recovered" label="Recovered" />
                 <Table.Column prop="incidentRate" label="Incident Rate" />
             </Table>
