@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
                         <Text h2>Covid-19 Outbreak </Text>
                     </Grid>
                     <Grid style={{display:"flex", alignItems:"center"}}>
-                        <Text type="secondary" span size={12} style={{marginRight:"5px"}}>Swith to dark mode </Text>
+                        <Text type="secondary" span size={12} style={{marginRight:"5px"}}>Switch to dark mode </Text>
                         <Toggle checked={state.theme==='dark'} size="large" onChange={() => {
                             dispatch({type: ACTIONS.THEME_TOGGLE})
                         }}/>
