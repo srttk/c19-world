@@ -11,6 +11,7 @@ const DetailTable = ({ country = null, fetchSection="confirmed" }) => {
                 confirmed: Number(d.confirmed).toLocaleString(),
                 deaths:Number(d.deaths).toLocaleString(),
                 recovered:Number(d.recovered).toLocaleString(),
+                incidentRate: Number(d.incidentRate).toLocaleString()
                  })):[]}>
                 <Table.Column prop="provinceState" label="Province / State" />
                 <Table.Column prop="confirmed" label="Confirmed" />

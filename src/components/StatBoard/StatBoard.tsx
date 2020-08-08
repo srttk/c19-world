@@ -14,7 +14,7 @@ const Stats = ({ confirmed , deaths , recovered }) => {
                 <StatCard type="dark" title="Deaths" value={deaths.value}/>
             </Grid>
             <Grid xs={24} md={8}>
-            <StatCard type="success" title="Recoverd" value={recovered.value}/>
+            <StatCard type="success" title="Recovered" value={recovered.value}/>
             </Grid>
         </Grid.Container>
         </div>
