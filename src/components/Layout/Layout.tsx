@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head'
 import { Page, Text, Grid, Toggle } from '@zeit-ui/react';
-import { HeartFill , Zap } from '@zeit-ui/react-icons'
+import { HeartFill , Zap, Sun, Moon } from '@zeit-ui/react-icons'
 import { AppContext, ACTIONS} from '../Providers/AppProvider'
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
     const { dispatch, state} = useContext(AppContext)
 
     useEffect(() => {
@@ -25,16 +25,18 @@ const Layout = ({ children }) => {
                     </Grid>
                     <Grid style={{display:"flex", alignItems:"center"}}>
                         <Text type="secondary" span size={12} style={{marginRight:"5px"}}>Switch to dark mode </Text>
-                        <Toggle checked={state.theme==='dark'} size="large" onChange={() => {
+                        <Sun size={14}/>
+                        <Toggle style={{marginRight:"5px", marginLeft:"5px"}} checked={state.theme==='dark'} size="large" onChange={() => {
                             dispatch({type: ACTIONS.THEME_TOGGLE})
                         }}/>
+                        <Moon size={14}/>
                     </Grid>
                 </Grid.Container>
             </Page.Header>
             <Page.Content>
                 {children}
             </Page.Content>
-            <Page.Footer>
+            <Page.Footer style={{position:"relative"}}>
                 <Grid.Container gap={4}>
                     <Grid xs={24} md={12}>
                         <Text type="secondary" size={12} >

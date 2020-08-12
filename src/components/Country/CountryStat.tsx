@@ -6,7 +6,7 @@ import fetcher from '../../lib/fetcher'
 import OverallCount from './OverallCount'
 import Detailed from './Detailed'
 
-const CountryStat = () => {
+const CountryStat: React.FC = () => {
 
     const [country, setCountry] = useState("IND")
 

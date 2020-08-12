@@ -3,7 +3,7 @@ import { Tabs } from '@zeit-ui/react'
 import { Activity, Meh, Heart } from '@zeit-ui/react-icons'
 import DetailTable from './DetailTable'
 
-const Detailed = ({ country = null }) => {
+const Detailed: React.FC<{country:string}> = ({ country = null }) => {
     
     return (
         <div>

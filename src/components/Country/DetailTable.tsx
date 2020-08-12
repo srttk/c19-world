@@ -3,7 +3,7 @@ import { Table, Loading } from '@zeit-ui/react'
 import useSWR from 'swr'
 import fetcher from '../../lib/fetcher'
 
-const DetailTable = ({ country = null, fetchSection="confirmed" }) => {
+const DetailTable: React.FC<{ country: string, fetchSection?:string}>= ({ country = null, fetchSection="confirmed" }) => {
     const { data , error } = useSWR(`/api/countries/${country}/${fetchSection}`, fetcher)
     return (
         <div>
