@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Loading } from '@zeit-ui/react'
+import { Table, Loading } from '@geist-ui/react'
 import useSWR from 'swr'
 import fetcher from '../../lib/fetcher'
 

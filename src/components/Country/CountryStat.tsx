@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import useSWR from 'swr'
-import { Select, Loading , Card, Text, Grid} from '@zeit-ui/react'
-import { Heart, Meh, Activity } from '@zeit-ui/react-icons'
+import { Select, Loading , Card, Text, Grid} from '@geist-ui/react'
+import { Heart, Meh, Activity } from '@geist-ui/react-icons'
 import fetcher from '../../lib/fetcher'
 import OverallCount from './OverallCount'
 import Detailed from './Detailed'

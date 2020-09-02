@@ -1,6 +1,6 @@
 import React from 'react';
-import { Tabs } from '@zeit-ui/react'
-import { Activity, Meh, Heart } from '@zeit-ui/react-icons'
+import { Tabs } from '@geist-ui/react'
+import { Activity, Meh, Heart } from '@geist-ui/react-icons'
 import DetailTable from './DetailTable'
 
 const Detailed: React.FC<{country:string}> = ({ country = null }) => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Text } from '@zeit-ui/react';
-import {Heart, Meh, Activity} from '@zeit-ui/react-icons';
+import { Grid, Text } from '@geist-ui/react';
+import {Heart, Meh, Activity} from '@geist-ui/react-icons';
 import StatCard from '../StatCard'
 
 type StatValue = {

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head'
-import { Page, Text, Grid, Toggle } from '@zeit-ui/react';
-import { HeartFill , Zap, Sun, Moon } from '@zeit-ui/react-icons'
+import { Page, Text, Grid, Toggle } from '@geist-ui/react';
+import { HeartFill , Zap, Sun, Moon } from '@geist-ui/react-icons'
 import { AppContext, ACTIONS} from '../Providers/AppProvider'
 const Layout: React.FC = ({ children }) => {
     const { dispatch, state} = useContext(AppContext)

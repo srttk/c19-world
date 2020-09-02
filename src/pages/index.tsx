@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import fetcher from '../lib/fetcher'
 import StatBoard from '../components/StatBoard'
 import CountryStat from '../components/Country/CountryStat'
-import { Loading } from '@zeit-ui/react'
+import { Loading } from '@geist-ui/react';
 const index = () => {
 
     const { data, error } = useSWR(`/api`, fetcher)

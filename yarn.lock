@@ -1012,6 +1012,18 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@geist-ui/react-icons@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/react-icons/-/react-icons-1.0.0.tgz#2b08f155a0d57549eb8456143e5d51b71b0a11f1"
+  integrity sha512-6mNGTLu+EDcyDmf2BLMqKbne3bNX9wbHl4YTSj4nVy4GaMvC8IAIXpxfhdTBBHiTZ1Bm3+9PxQqtyvJvYl0WXQ==
+
+"@geist-ui/react@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@geist-ui/react/-/react-2.0.1.tgz#a00056a419a2a3ccc03a7d9a4bba03131c02b878"
+  integrity sha512-Onf9Tu86mmZoNNsaTG5DsatP18/EW04CN/Gg494v35wz2Xc3OU0L6YhEWM/CFCcIdyOjvwq+4RNT+e1KXCTX+A==
+  dependencies:
+    styled-jsx "^3.2.5"
+
 "@next/react-dev-overlay@9.5.1":
   version "9.5.1"
   resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.5.1.tgz#534e84fbd67f8b2ad0f7b8363ae069943a6b5e12"
